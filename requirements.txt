@@ -1,0 +1,10 @@
+gitdb==4.0.12
+GitPython==3.1.44
+ipython==8.12.3
+numpy==2.2.6
+pandas==2.2.3
+pdfplumber==0.11.6
+python-dateutil==2.9.0.post0
+pytz==2025.2
+reportlab==4.4.1
+streamlit==1.45.1

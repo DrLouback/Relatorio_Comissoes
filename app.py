@@ -43,3 +43,5 @@ if uploaded_file is not None:
         file_name=nome_arquivo,
         mime="application/pdf"
     )
+
+st.caption('Studio Cuidar')
