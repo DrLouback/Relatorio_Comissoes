@@ -9,8 +9,8 @@ import io
 
 
 
-def extract_table_from_pdf(pdf):
-    """ Extracts a table from a PDF file."""
+def extrair_tabela_do_pdf(pdf):
+    """ Extrai a tabela de um pdf."""
     dados = []
     try:
         with pdfplumber.open(pdf) as pdf_file:
@@ -100,7 +100,7 @@ def gerar_pdf(arquivo_transformado, professor, timestamp):
     return buffer
 
 def extrair_transformar_carregar_pdf(arquivo):
-        dados = extract_table_from_pdf(arquivo)
+        dados = extrair_tabela_do_pdf(arquivo)
         convertido = converter_reposições(dados)
         return convertido
 

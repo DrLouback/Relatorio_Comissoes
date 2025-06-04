@@ -2,7 +2,7 @@ import streamlit as st
 import os
 import io
 from datetime import datetime
-from src import extrair_transformar_carregar_pdf,comissão_total, gerar_pdf
+from src import extrair_transformar_carregar_pdf, gerar_pdf
 import pytz
 
 fuso_horario_brasil = pytz.timezone("America/Sao_Paulo")
@@ -14,7 +14,6 @@ professor = st.text_input("Digite o nome do profissional:")
     
     # Upload do arquivo PDF
 uploaded_file = st.file_uploader("Selecione o arquivo de comissão - PDF", type=["pdf"])
-    
 if uploaded_file is not None:
     st.write("Arquivo carregado:", uploaded_file.name)
 
